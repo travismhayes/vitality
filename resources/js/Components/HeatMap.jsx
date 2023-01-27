@@ -19,7 +19,6 @@ export default function HeatMap() {
     }, {});
 
     Array.from({ length: 366 }, (_, i) => {
-      console.log(i)
       date.subtract(1, 'days');
       const day = {
         date: date.format('YYYY-MM-DD'),
